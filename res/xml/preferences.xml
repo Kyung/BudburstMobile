@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+  	android:title="@string/Pref_Category1"
+  >
+    <Preference
+  		android:title="@string/Pref_Category2"
+  		android:summary="@string/Pref_Category2"
+  		android:key="downloadLists"
+  	/>
+  	<Preference
+  		android:title="@string/Pref_Category3"
+  		android:summary="@string/Pref_Category3"
+  		android:key="downloadDefinedLists"
+  	/>
+  	<Preference
+  		android:title="@string/Pref_Category4"
+  		android:summary="@string/Pref_Category4"
+  		android:key="downloadFloracache"
+  	/>
+  	
+  </PreferenceCategory>
+  <PreferenceCategory
+  	android:title="@string/Pref_Category8"
+  >
+  	<edu.ucla.cens.budburstmobile.utils.ImageViewPreference
+  		android:title="IconPreference Title"
+  		android:summary="IconPreference Summary"
+  		android:key="key1"
+  	/>
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+  	android:title="@string/Pref_Category5"
+  >
+    <Preference
+  		android:title="@string/Pref_Category6"  		
+  		android:key="userlogout"
+  	/>
+  </PreferenceCategory>
+</PreferenceScreen>

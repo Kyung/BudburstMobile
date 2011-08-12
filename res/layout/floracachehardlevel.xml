@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+    	android:id="@+id/gps_info"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/compassview"
+    	android:text="Getting GPS signal..."
+    	android:textSize="20sp"
+    	android:gravity="center"
+    	android:layout_centerVertical="true"
+    	android:layout_centerHorizontal="true"
+    />
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@+id/gps_info"
+    	android:layout_above="@+id/footer_item"
+    	android:id="@+id/list_layout"
+    >
+	    <ListView
+			android:id="@android:id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+			
+	</LinearLayout>
+    <!-- Refresh Button -->
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/footer_item"
+		android:layout_alignParentBottom="true"
+		android:background="@color/darkgray"
+	>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingTop="2dp"
+		>
+			<Button 
+				android:id="@+id/refresh_lists"
+				android:layout_width="200dp" 
+				android:layout_height="wrap_content" 
+				android:text="@string/Floracache_Refresh_Button" 
+				android:textSize="15sp"/>
+		</LinearLayout>
+	</RelativeLayout>
+	<!-- End Refresh Button -->
+</RelativeLayout>

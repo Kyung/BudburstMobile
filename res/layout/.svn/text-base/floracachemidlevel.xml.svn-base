@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="100dp"
+    	android:background="@drawable/bg_line"
+    	android:weightSum="1"
+    	android:orientation="horizontal"
+    	android:id="@+id/upper_layout"
+    >
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="100dp"
+    		android:id="@+id/direction_layout"
+    		android:layout_weight="0.4"
+    		android:background="@drawable/bborder"
+    	>
+    		<TextView
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_centerHorizontal="true"
+    			android:layout_marginTop="23dp"
+    			android:id="@+id/direction_text1"
+    			android:text="Current Direction"
+    			android:textSize="18sp"
+    			android:textColor="@color/black"
+    		/>
+			<TextView
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@+id/direction_text1"
+    			android:layout_centerHorizontal="true"
+    			android:layout_centerVertical="true"
+    			android:text="None"
+    			android:textSize="21sp"
+    			android:textColor="@color/black"
+    			android:textStyle="bold"
+    			android:id="@+id/direction_text2"
+    		/>
+    		
+    		
+    	</RelativeLayout>
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="100dp"
+    		android:layout_weight="0.6"
+    		android:layout_toRightOf="@+id/direction_layout"
+    		android:background="@drawable/bborder"
+    	>
+	    	<cens.ucla.edu.budburst.mapview.CompassView
+				android:id="@+id/compassview"
+				android:layout_width="fill_parent"
+				android:layout_height="100dp"
+				android:layout_centerHorizontal="true"
+	    		android:layout_centerVertical="true"
+			/>
+		</RelativeLayout>
+    </LinearLayout>
+	    
+    <TextView
+    	android:id="@+id/gps_info"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/upper_layout"
+    	android:text="Getting GPS signal..."
+    	android:textSize="20sp"
+    	android:gravity="center"
+    	android:layout_centerVertical="true"
+    	android:layout_centerHorizontal="true"
+    />
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@+id/gps_info"
+    	android:layout_above="@+id/footer_item"
+    	android:id="@+id/list_layout"
+    >
+    -->
+    <TextView
+    	android:id="@+id/gps_info"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Getting GPS signal..."
+    	android:textSize="20sp"
+    	android:gravity="center"
+    	android:layout_centerVertical="true"
+    	android:layout_centerHorizontal="true"
+    />
+	    <ListView
+			android:id="@android:id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_below="@+id/gps_info"
+			android:layout_above="@+id/footer_item"/>
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/footer_item"
+		android:layout_alignParentBottom="true"
+		android:background="@color/darkgray"
+		android:gravity="center"
+	>
+	
+	<Button
+	  	android:layout_width="200dp"
+	  	android:layout_height="wrap_content"
+	  	android:id="@+id/refresh_lists"
+	  	android:textSize="15sp"
+	  	android:text="@string/Floracache_Refresh_Button"
+	  />
+
+	</LinearLayout>
+
+	<!-- End Refresh Button -->
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/white</item>
+		<item name="android:windowIsFloating">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="PBBLightBackgroundTweak">
+		<item name="android:windowBackground">@color/BudBurstLightBackground</item>
+	</style>
+	<style name="PBBTitleBackground">     
+        <item name="android:background">@color/pbb_title_background</item>                   
+    </style>
+    <style name="FloraTitleBackground">     
+        <item name="android:background">@color/flora_title_background</item>                   
+    </style>
+</resources>
+
+
